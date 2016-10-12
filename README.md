@@ -55,8 +55,10 @@ We prefer atomic design, based on Bootstrap [http://getbootstrap.com/](http://ge
 
 # Development finished
 * Add readme.md with info how to use dev stack etc.
+
 ## Browser compatibility
 * Test in supported browsers and devices
+
 ## Performance
 * PageSpeedInsights (https://developers.google.com/speed/pagespeed/insights/)
 * Minified production build for CSS, JS, SVG
