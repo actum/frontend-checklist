@@ -24,7 +24,7 @@
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net)
 
 ## Styleguide
-We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap](http://getbootstrap.com/](http://getbootstrap.com/)
+We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](http://getbootstrap.com/)
 * headings – h1 to h6
 * paragraphs and links
 * lists (ordered, unordered, definition) – 3 levels
