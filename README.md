@@ -5,7 +5,7 @@
 * Browser matrix should be defined and agreed on
 
 ## Code conventions
-* Make sure dev stack is set up (eslint etc.)
+* Make sure [dev stack](https://github.com/actum/gulp-dev-stack) is set up (eslint etc.)
 
 ## Graphic sources
 * File format (PSD, version, multiple files?, …)
@@ -24,7 +24,7 @@
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net)
 
 ## Styleguide
-We prefer atomic design, based on Bootstrap [http://getbootstrap.com/](http://getbootstrap.com/)
+We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap](http://getbootstrap.com/](http://getbootstrap.com/)
 * headings – h1 to h6
 * paragraphs and links
 * lists (ordered, unordered, definition) – 3 levels
