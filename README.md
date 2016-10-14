@@ -6,12 +6,12 @@
 
 Matrix of supported browsers should be defined and agreed on with the client.
 
-**Outcomes**
+#### Outcomes
 
 * QA engineers know which browsers to test in
 * Developers know which features they can use
 
-**Example**
+#### Example
 
 | Browser/platform  | Version      |
 | -------------     | ------------ |
@@ -26,7 +26,7 @@ Use the latest versions of the [gulp dev stack](https://github.com/actum/gulp-de
 In case you need more features, add them within the project.
 You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/issues) and discuss an addition of the feature to the dev stack there.
 
-**Outcomes**
+#### Outcomes
 
 * Best practices are ensured (structure, linting, …)
 * No need to reinvent the wheel
