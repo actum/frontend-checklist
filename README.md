@@ -1,13 +1,38 @@
-# frontend-checklist
+# Frontend Checklist
 
-# Before development starts
-## Browser compatibility
-* Browser matrix should be defined and agreed on
+## Before development
 
-## Code conventions
-* Make sure dev stack is set up (eslint etc.)
+### Browser compatibility
 
-## Graphic sources
+Matrix of supported browsers should be defined and agreed on with the client.
+
+**Outcomes**
+
+* QA engineers know which browsers to test in
+* Developers know which features they can use
+
+**Example**
+
+| Browser/platform  | Version      |
+| -------------     | ------------ |
+| MS IE / Windows   | 11           |
+| MS Edge / Windows | 12 and above |
+| Google Chrome     | 45 and above |
+| iOS Safari        | 9  and above |
+
+### Dev Stack
+
+Use the latest versions of the [gulp dev stack](https://github.com/actum/gulp-dev-stack).
+In case you need more features, add them within the project.
+You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/issues) and discuss an addition of the feature to the dev stack there.
+
+**Outcomes**
+
+* Best practices are ensured (structure, linting, …)
+* No need to reinvent the wheel
+
+### Graphic sources
+
 * File format (PSD, version, multiple files?, …)
 * What will be designed – desktop, responsive?
 * font family(ies) - from where (Google fonts/Typekit/Fonts.com) - who pays for the licence?
@@ -23,7 +48,8 @@
 * text line-height - think about languages with diacritcs so that lines do not overlap - especially for headlines
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net)
 
-## Styleguide
+### Styleguide
+
 We prefer atomic design, based on Bootstrap [http://getbootstrap.com/](http://getbootstrap.com/)
 * headings – h1 to h6
 * paragraphs and links
@@ -39,24 +65,36 @@ We prefer atomic design, based on Bootstrap [http://getbootstrap.com/](http://ge
 * User interactions (collapsing, read more, animations)
 * Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/)
 
-# Development in progress
-## Best Practices
+---
+
+## During development
+
+### Best Practices
+
 * Write the code according to best practices [http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Coding-style](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Coding-style)
 * Use our CSS naming conventions ([http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/CSS-Guidelines](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/CSS-Guidelines)
 * Maintain living styleguide using the dev stack
 * Make sure favicon, touch icons, OG images are implemented
 
-## Accessibility
+### Accessibility
+
 * Write valid code
 * Keep the code semantic (use headings, paragraphs, etc. where appropriate)
 * Alt text for images
 * Focus state for links
 * `TODO more?`
 
-# Development finished
+---
+
+## After development
+
 * Add readme.md with info how to use dev stack etc.
-## Browser compatibility
+
+### Browser compatibility
+
 * Test in supported browsers and devices
-## Performance
+
+### Performance
+
 * PageSpeedInsights (https://developers.google.com/speed/pagespeed/insights/)
 * Minified production build for CSS, JS, SVG
