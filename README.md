@@ -50,7 +50,8 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 
 ### Styleguide
 
-We prefer atomic design, based on Bootstrap [http://getbootstrap.com/](http://getbootstrap.com/)
+We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](http://getbootstrap.com/)
+
 * headings – h1 to h6
 * paragraphs and links
 * lists (ordered, unordered, definition) – 3 levels
@@ -89,6 +90,10 @@ We prefer atomic design, based on Bootstrap [http://getbootstrap.com/](http://ge
 ## After development
 
 * Add readme.md with info how to use dev stack etc.
+
+### Browser compatibility
+
+* Test in supported browsers and devices
 
 ### Browser compatibility
 
