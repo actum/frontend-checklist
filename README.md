@@ -16,12 +16,13 @@ Matrix of supported browsers should be defined and agreed on with the client.
 | Device        | Platform/version | Browser       | Version      |
 | ------------- | -------------    | ------------- | ------------ |
 | Mobile        | iOS 8+           | Safari        | 9  and above |
-|               | Android 4.4+     | Google Chrome | 45 and above |
+|               | Android 4.4+     | Google Chrome | 53 and above |
 | Tablet        | iOS 8+           | Safari        | 9  and above |
-|               | Android 4.4+     | Google Chrome | 45 and above |
+|               | Android 4.4+     | Google Chrome | 53 and above |
 | Desktop       | Windows 8+       | MS IE         | 11           |
 |               |                  | MS Edge       | 12 and above |
-|               |                  | Google Chrome | 45 and above |
+|               |                  | Google Chrome | 53 and above |
+|               |                  | Firefox       | 47 and above |
 |               | Mac              | Safari        | 9  and above |
 
 ### Dev Stack
