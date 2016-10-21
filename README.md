@@ -39,7 +39,7 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 ### Graphic sources
 
 * File format (PSD, version, multiple files?, …)
-* What will be designed – desktop, responsive?
+* What will be designed – desktop, responsive (Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options))?
 * font family(ies) - from where (Google fonts/Typekit/Fonts.com) - who pays for the licence?
 * form fields - validation
 * styled form fields - select/radio/checkbox - all states (expanded, collapsed)
