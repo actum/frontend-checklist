@@ -100,10 +100,6 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 
 * Test in supported browsers and devices
 
-### Browser compatibility
-
-* Test in supported browsers and devices
-
 ### Performance
 
 * PageSpeedInsights (https://developers.google.com/speed/pagespeed/insights/)
