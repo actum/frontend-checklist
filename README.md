@@ -1,5 +1,10 @@
 # Frontend Checklist
 
+## Contents
+* [Before development](#before-development)
+* [During development](#during-development)
+* [After development](#after-development)
+
 ## Before development
 
 ### Browser compatibility
