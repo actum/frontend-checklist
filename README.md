@@ -94,7 +94,7 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 
 ## After development
 
-* Add readme.md with info how to use dev stack etc.
+* Add readme.md with info how to use dev stack etc. (Put this info to the [project page in Intranet](http://intranet/Wiki-Actum/Development/Front-end/Projects))
 
 ### Browser compatibility
 
