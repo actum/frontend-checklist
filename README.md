@@ -42,21 +42,24 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 * No need to reinvent the wheel
 
 ### Graphic sources
+Consult with the designer the expected quality of the source files (inspiration: [Photoshop Etiquette](http://photoshopetiquette.com/)).
 
-* File format (PSD, version, multiple files?, …)
+* File format (PSD, versions, multiple files - one for each breakpoint, compatibility with Photoshop or Avocode)
 * What will be designed – desktop, responsive (Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options))?
-* font family(ies) - from where (Google fonts/Typekit/Fonts.com) - who pays for the licence?
-* form fields - validation
-* styled form fields - select/radio/checkbox - all states (expanded, collapsed)
-* links (hover/focus/active/visited?)
-* buttons: hover/focus/active/disabled states
-* empty states (example: empty search result; no user profile photo)
+* Form fields - validation
+* Styled form fields - select/radio/checkbox - all states (expanded, collapsed)
+* Links: hover/focus/active/visited state
+* Buttons: hover/focus/active/disabled states
+* Empty state: (example: empty search result; no user profile photo)
 * 404 page and other error pages
-* design for variable text length
-* design for variable images (height/width/ratio) (user uploaded image)
-* No font antialiasing in the PSD (no crisp/sharp/smooth style)
-* text line-height - think about languages with diacritcs so that lines do not overlap - especially for headlines
+* Design for variable text length
+* Design for variable images (height/width/ratio) in case of user uploaded image
+* Do not use font antialiasing in the PSD (no crisp/sharp/smooth style)
+* Adjust text line-height - languages with diacritcs (Czech) need more spacing so that lines do not overlap
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net)
+
+#### Font family(ies)
+* Consult with the FE developer how many fonts and ther variants (bold, black, light,…) to use and when they will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
 
 ### Styleguide
 
