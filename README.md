@@ -47,7 +47,7 @@ Consult with the designer the expected quality of the source files (inspiration:
 * File format (PSD, versions, multiple files - one for each breakpoint, compatibility with Photoshop or Avocode)
 * What will be designed – desktop, responsive (Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options))?
 * Form fields - validation
-* Styled form fields - select/radio/checkbox - all states (expanded, collapsed)
+* Styled form fields - select/radio/checkbox - all states (checked, expanded, collapsed)
 * Links: hover/focus/active/visited state
 * Buttons: hover/focus/active/disabled states
 * Empty state: (example: empty search result; no user profile photo)
@@ -70,14 +70,14 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 * lists (ordered, unordered, definition) – 3 levels
 * tables
 * images
-* form (styling consult with coder and PM)
+* form elements
 * error messages (form error messages)
 * pagination
 * buttons (1 or 2 or 3 versions - but nowhere use 4th version)
 * components (lightbox, …)
-* colors (hexadecimal code: #4285f4 or RGBA for transparency)
+* colors (provide hexadecimal code: #4285f4 or RGBA: rgba(34,34,34,.3) for transparency)
 * User interactions (collapsing, read more, animations)
-* Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/)
+* Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/) - preferably SVG
 
 ---
 
