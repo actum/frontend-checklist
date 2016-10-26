@@ -59,7 +59,7 @@ Consult with the designer the expected quality of the source files (inspiration:
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net)
 
 #### Font family(ies)
-* Consult with the FE developer how many fonts and ther variants (bold, black, light,…) to use and when they will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
+* Consult with the FE developer how many fonts and variants (bold, black, light,…) to use and when they will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
 
 ### Styleguide
 
