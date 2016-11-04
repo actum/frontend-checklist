@@ -42,12 +42,39 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 * No need to reinvent the wheel
 
 ### Graphic sources
-Consult with the designer the expected quality of the source files (inspiration: [Photoshop Etiquette](http://photoshopetiquette.com/)).
 
-* File format (PSD, versions, multiple files - one for each breakpoint, compatibility with Photoshop or Avocode)
-* What will be designed – desktop, responsive (Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options))?
-* Form fields - validation
-* Styled form fields - select/radio/checkbox - all states (checked, expanded, collapsed)
+The quality of the source files is important for the collaboration between FE developers and designers.
+
+#### Example
+* The designer should follow [Photoshop Etiquette](http://photoshopetiquette.com/) when creating the source files.
+
+#### Outcomes
+* Consistency of colors, typography, spacing, …
+
+### Responsive design
+
+* The file format should be agreed on between the designer and FE developer.
+* Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options)
+
+#### Example
+
+* PSD - ensure that the file is compatible with Photoshop or [Avocode](https://avocode.com/)
+* One file for each breakpoint (device)
+
+
+### Forms
+
+* Avoid styling of the form elements (checkbox, radio, select) on mobile (touch) devices. The native implementation is the best for the user experience.
+
+#### Example
+
+* If the custom style is required, then all of the following styling must be defined:
+	* default state
+	* checked (radio, checkbox) state
+	* open state (select)
+	* error state (validations)
+
+## Design
 * Links: hover/focus/active/visited state
 * Buttons: hover/focus/active/disabled states
 * Empty state: (example: empty search result; no user profile photo)
