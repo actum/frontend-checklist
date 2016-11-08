@@ -94,7 +94,7 @@ The quality of the source files is important for the collaboration between FE de
 * Decreasing the possibility of broken page layout
 
 ### 1.8. Fonts
-* Consult with the FE developer how many fonts and variants (bold, black, light,…) to use
+* Consider how many fonts and variants (bold, black, light,…) to use
 * Custom fonts will increase the page loading time (critical on mobile devices)
 * Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
 * Does the font support all the necessary characters?
@@ -113,7 +113,7 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 * pagination
 * buttons (1 or 2 or 3 versions - but nowhere use 4th version)
 * components (lightbox, …)
-* colors (provide hexadecimal code: #4285f4 or RGBA: rgba(34,34,34,.3) for transparency)
+* colors (provide hexadecimal code: `#4285f4` or RGBA: `rgba(34,34,34,.3)` for transparency)
 * User interactions (collapsing, read more, animations)
 * Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/) - preferably SVG
 
