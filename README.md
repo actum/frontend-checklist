@@ -1,13 +1,13 @@
 # Frontend Checklist
 
 ## Contents
-* [Before development](#before-development)
-* [During development](#during-development)
-* [After development](#after-development)
+* [1. Before development](#user-content-1-before-development)
+* [2. During development](#user-content-2-during-development)
+* [3. After development](#user-content-3-after-development)
 
-## Before development
+## 1. Before development
 
-### Browser compatibility
+### 1.1. Browser compatibility
 
 Matrix of supported browsers should be defined and agreed on with the client.
 
@@ -30,7 +30,7 @@ Matrix of supported browsers should be defined and agreed on with the client.
 |               |                  | Firefox       | 47 and above |
 |               | Mac              | Safari        | 9  and above |
 
-### Dev Stack
+### 1.2. Dev Stack
 
 Use the latest versions of the [gulp dev stack](https://github.com/actum/gulp-dev-stack).
 In case you need more features, add them within the project.
@@ -41,7 +41,7 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 * Best practices are ensured (structure, linting, …)
 * No need to reinvent the wheel
 
-### Graphic sources
+### 1.3. Graphic sources
 
 The quality of the source files is important for the collaboration between FE developers and designers.
 
@@ -51,7 +51,7 @@ The quality of the source files is important for the collaboration between FE de
 #### Outcomes
 * Consistency of colors, typography, spacing, …
 
-### Responsive design
+### 1.4. Responsive design
 
 * The file format should be agreed on between the designer and FE developer.
 * Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options)
@@ -61,10 +61,10 @@ The quality of the source files is important for the collaboration between FE de
 * PSD - ensure that the file is compatible with Photoshop or [Avocode](https://avocode.com/)
 * One file for each breakpoint (device)
 
+### 1.5. Forms
 
-### Forms
-
-* Avoid styling of the form elements (checkbox, radio, select) on mobile (touch) devices. The native implementation is the best for the user experience.
+* Avoid styling of the following elements: `checkbox`, `radio`, `select` on mobile (touch) devices. The native implementation is the best for the user experience.
+* Provide validation states (valid/invalid states, error message placement)
 
 #### Example
 
@@ -72,23 +72,34 @@ The quality of the source files is important for the collaboration between FE de
 	* default state
 	* checked (radio, checkbox) state
 	* open state (select)
-	* error state (validations)
 
-## Design
+### 1.6. Design
 * Links: hover/focus/active/visited state
 * Buttons: hover/focus/active/disabled states
-* Empty state: (example: empty search result; no user profile photo)
 * 404 page and other error pages
+* Do not use font antialiasing in the PSD (no crisp/sharp/smooth style)
+* Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net))
+* Ajax loading icon
+
+### 1.7. Design should contain the real content
+* Adjust the text line height for languages with diacritic (Czech), especially in the headlines
 * Design for variable text length
 * Design for variable images (height/width/ratio) in case of user uploaded image
-* Do not use font antialiasing in the PSD (no crisp/sharp/smooth style)
-* Adjust text line-height - languages with diacritcs (Czech) need more spacing so that lines do not overlap
-* Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net)
+* Design should be provided for the empty state (example: empty search result; no user profile photo/description)
 
-#### Font family(ies)
-* Consult with the FE developer how many fonts and variants (bold, black, light,…) to use and where they will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
+#### Example
+* Do not use "Lorem ipsum…"
 
-### Styleguide
+### Outcomes
+* Decreasing the possibility of broken page layout
+
+### 1.8. Fonts
+* Consult with the FE developer how many fonts and variants (bold, black, light,…) to use
+* Custom fonts will increase the page loading time (critical on mobile devices)
+* Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
+* Does the font support all the necessary characters?
+
+### 1.9. Styleguide
 
 We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](http://getbootstrap.com/)
 
@@ -108,34 +119,34 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 
 ---
 
-## During development
+## 2. During development
 
-### Best Practices
+### 2.1. Best Practices
 
 * Write the code according to best practices [http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Coding-style](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Coding-style)
 * Use our CSS naming conventions ([http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/CSS-Guidelines](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/CSS-Guidelines)
 * Maintain living styleguide using the dev stack
 * Make sure favicon, touch icons, OG images are implemented
 
-### Accessibility
+### 2.2. Accessibility
 
 * Write valid code
 * Keep the code semantic (use headings, paragraphs, etc. where appropriate)
-* Alt text for images
+* Use alt text for images (at least leave the alt attribute empty)
 * Focus state for links
 * `TODO more?`
 
 ---
 
-## After development
+## 3. After development
 
-* Add readme.md with info how to use dev stack etc. (Put this info to the [project page in Intranet](http://intranet/Wiki-Actum/Development/Front-end/Projects))
+* Add readme.md with info how to use dev stack etc. Also put this info to the [project page in Intranet](http://intranet/Wiki-Actum/Development/Front-end/Projects).
 
-### Browser compatibility
+### 3.1. Browser compatibility
 
-* Test in supported browsers and devices
+* Test in supported browsers and devices ([1.1.](#user-content-11-browser-compatibility))
 
-### Performance
+### 3.2. Performance
 
-* PageSpeedInsights (https://developers.google.com/speed/pagespeed/insights/)
-* Minified production build for CSS, JS, SVG
+* Aim for the highest score on desktop and mobile in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/)
+* Make sure that you serve the minified build of CSS, JS and SVG on production
