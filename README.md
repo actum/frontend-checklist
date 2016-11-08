@@ -79,7 +79,7 @@ The quality of the source files is important for the collaboration between FE de
 * 404 page and other error pages
 * Do not use font antialiasing in the PSD (no crisp/sharp/smooth style)
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net))
-* Ajax loading icon
+* Ajax loading icon (preferably [CSS animation](https://projects.lukehaas.me/css-loaders/), or SVG when it is supported in IE11+)
 
 ### 1.7. Design should contain the real content
 * Adjust the text line height for languages with diacritic (Czech), especially in the headlines
