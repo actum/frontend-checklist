@@ -131,7 +131,6 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 * buttons (1 or 2 or 3 versions - but nowhere use 4th version)
 * components (lightbox, …)
 * colors (provide hexadecimal code: `#4285f4` or RGBA: `rgba(34,34,34,.3)` for transparency)
-* User interactions (collapsing, read more, animations)
 
 #### 1.9.1. Icons
 
@@ -141,6 +140,20 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 ##### Outcomes
 
 * Icons are crisp sharp on all screen sizes (devices/high screen density)
+
+#### 1.9.2. User interactions
+
+Define the behavior of collapsing, read more, animations.
+
+##### Example
+
+* [Animations](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Animations)
+* [UI-microinteractions](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/UI-microinteractions)
+
+##### Outcomes
+
+* Better user experience
+* Consistency
 
 ---
 
