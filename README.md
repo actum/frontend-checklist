@@ -86,7 +86,7 @@ The quality of the source files is important for the collaboration between FE de
 
 #### Outcomes
 
-* Developer does not need guess/design the missing states and no additional iteration of design process is neeeded.
+* Developer does not to need guess/design the missing states and no additional iteration of design process is neeeded.
 
 ### 1.7. Design should contain the real content
 
