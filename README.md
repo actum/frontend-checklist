@@ -108,8 +108,13 @@ The quality of the source files is important for the collaboration between FE de
 
 * Consider how many fonts and variants (bold, black, light,…) to use
 * Custom fonts will increase the page loading time (critical on mobile devices)
+* Define the fallback font in case the custom font does not load
 * Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files and make sure that the correct licence is used)
 * Does the font support all the necessary characters?
+
+#### Outcomes
+
+* Fast page load
 
 ### 1.9. Styleguide
 
@@ -127,7 +132,15 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 * components (lightbox, …)
 * colors (provide hexadecimal code: `#4285f4` or RGBA: `rgba(34,34,34,.3)` for transparency)
 * User interactions (collapsing, read more, animations)
-* Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/) - preferably SVG
+
+#### 1.9.1. Icons
+
+* Prefered format: `SVG`
+* Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/)
+
+##### Outcomes
+
+* Icons are crisp sharp on all screen sizes (devices/high screen density)
 
 ---
 
