@@ -98,7 +98,7 @@ The quality of the source files is important for the collaboration between FE de
 #### Example
 
 * Do not use "Lorem ipsum…"
-* It should be specified and clear form in the design which containers should have equal heights, and which should be fluid (flexible)
+* It should be specified and clear in the design which containers should have equal heights, and which should be fluid (flexible)
 
 ### Outcomes
 
