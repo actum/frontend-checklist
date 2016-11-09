@@ -139,7 +139,7 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 
 * Write valid code
 * Keep the code semantic (use headings, paragraphs, etc. where appropriate)
-* Use alt text for images (at least leave the alt attribute empty)
+* Use alt text for images (at least leave the alt attribute empty, [read more](http://a11yproject.com/posts/alt-text/))
 * Focus state for links
 * `TODO more?`
 
