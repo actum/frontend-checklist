@@ -84,6 +84,10 @@ The quality of the source files is important for the collaboration between FE de
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net))
 * Ajax loading icon (preferably [CSS animation](https://projects.lukehaas.me/css-loaders/), or SVG when it is supported in IE11+)
 
+#### Outcomes
+
+* Developer does not need guess/design the missing states and no additional iteration of design process is neeeded.
+
 ### 1.7. Design should contain the real content
 
 * Adjust the text line height for languages with diacritic (Czech), especially in the headlines
@@ -94,6 +98,7 @@ The quality of the source files is important for the collaboration between FE de
 #### Example
 
 * Do not use "Lorem ipsum…"
+* It should be specified and clear form in the design which containers should have equal heights, and which should be fluid (flexible)
 
 ### Outcomes
 
