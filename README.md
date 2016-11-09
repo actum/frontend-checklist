@@ -46,15 +46,18 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 The quality of the source files is important for the collaboration between FE developers and designers.
 
 #### Example
+
 * The designer should follow [Photoshop Etiquette](http://photoshopetiquette.com/) when creating the source files.
+* Do not use font antialiasing in the PSD (no crisp/sharp/smooth style) - it is not supported in the browsers.
 
 #### Outcomes
+
 * Consistency of colors, typography, spacing, …
 
 ### 1.4. Responsive design
 
-* The file format should be agreed on between the designer and FE developer.
 * Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options)
+* The file format should be agreed on between the designer and FE developer.
 
 #### Example
 
@@ -74,29 +77,33 @@ The quality of the source files is important for the collaboration between FE de
 	* open state (select)
 
 ### 1.6. Design
-* Links: hover/focus/active/visited state
-* Buttons: hover/focus/active/disabled states
+
+* Links: `hover`/`focus`/`active`/`visited` state
+* Buttons: `hover`/`focus`/`active`/`disabled` states
 * 404 page and other error pages
-* Do not use font antialiasing in the PSD (no crisp/sharp/smooth style)
 * Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net))
 * Ajax loading icon (preferably [CSS animation](https://projects.lukehaas.me/css-loaders/), or SVG when it is supported in IE11+)
 
 ### 1.7. Design should contain the real content
+
 * Adjust the text line height for languages with diacritic (Czech), especially in the headlines
 * Design for variable text length
 * Design for variable images (height/width/ratio) in case of user uploaded image
 * Design should be provided for the empty state (example: empty search result; no user profile photo/description)
 
 #### Example
+
 * Do not use "Lorem ipsum…"
 
 ### Outcomes
+
 * Decreasing the possibility of broken page layout
 
 ### 1.8. Fonts
+
 * Consider how many fonts and variants (bold, black, light,…) to use
 * Custom fonts will increase the page loading time (critical on mobile devices)
-* Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files)
+* Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files and make sure that the correct licence is used)
 * Does the font support all the necessary characters?
 
 ### 1.9. Styleguide
@@ -150,3 +157,8 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 
 * Aim for the highest score on desktop and mobile in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/)
 * Make sure that you serve the minified build of CSS, JS and SVG on production
+
+#### Outcomes
+
+* The pages load quickly.
+* Better user experience.
