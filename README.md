@@ -118,7 +118,8 @@ The quality of the source files is important for the collaboration between FE de
 
 ### 1.9. Styleguide
 
-We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](http://getbootstrap.com/)
+We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](http://getbootstrap.com/).
+Styleguide describes all elements and components, their behavior, style, usage and code snippets.
 
 * headings – h1 to h6
 * paragraphs and links
@@ -130,7 +131,10 @@ We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstr
 * pagination
 * buttons (1 or 2 or 3 versions - but nowhere use 4th version)
 * components (lightbox, …)
-* colors (provide hexadecimal code: `#4285f4` or RGBA: `rgba(34,34,34,.3)` for transparency)
+
+#### Outcomes
+
+* All elements are defined and reusable, without need for additional development.
 
 #### 1.9.1. Icons
 
@@ -153,6 +157,14 @@ Define the behavior of collapsing, read more, animations.
 ##### Outcomes
 
 * Better user experience
+* Consistency
+
+#### 1.9.3. Colors
+
+* provide hexadecimal code: `#4285f4` or RGBA: `rgba(34,34,34,.3)` for transparency
+
+##### Outcomes
+
 * Consistency
 
 ---
