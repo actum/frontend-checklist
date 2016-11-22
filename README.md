@@ -183,8 +183,7 @@ Define the behavior of collapsing, read more, animations.
 * Write valid code
 * Keep the code semantic (use headings, paragraphs, etc. where appropriate)
 * Use alt text for images (at least leave the alt attribute empty, [read more](http://a11yproject.com/posts/alt-text/))
-* Focus state for links
-* `TODO more?`
+* Focus state for links (accessible using keyboard)
 
 ---
 
