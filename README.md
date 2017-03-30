@@ -141,6 +141,15 @@ Styleguide describes all elements and components, their behavior, style, usage a
 * Prefered format: `SVG`
 * Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/)
 
+1. Icon shapes are grouped semantically.
+    * if the shapes have the same `fill` attribute and it should change e.g. on hover, it should be in one `<g>` group tag (*represents a folder in graphic editor*)
+    * if the icon shouldn’t change it’s `fill`, `stroke`, etc., all the shapes should be in one `<g>`
+    * all groups, paths, shapes, etc. should have semantic/meaningful name (*e.g. head, eyebrows, left-arm, right-arm, etc.*)
+        * more words should be connected with dash `-` 
+        * should be in english, no special characters
+2. Icon shouldn't have `mask`
+    * if you have an icon inside a circle and the inside shape is bigger, so that it overflows the circle, just use **substract, intersect or difference** tool in Sketch or Illustrator, to cut the icon to it’s proper size and then use circle shape for the background
+
 ##### Outcomes
 
 * Icons are crisp sharp on all screen sizes (devices/high screen density)
