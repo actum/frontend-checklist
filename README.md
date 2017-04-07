@@ -43,9 +43,15 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 
 ### 1.3. Graphic sources
 
-The quality of the source files is important for the collaboration between FE developers and designers.
+The quality of the source files is important for the collaboration between FE developers and designers. 
+* Designer should keep consistency in colors, font sizes, paddings, margins etc. among all the files and components.
+* Designer should follow a [vertical rhythm](https://www.gridlover.net/)
+* Designer should not use decimal numbers, e.g. `20,45px`
 
-#### Example
+#### Sketch
+* The designer should use Sketch pages as actual web pages and artboards as different viewports of the pages. It makes it easier to see the differences beetween mobile/tablet/desktop versions of the page in one screen.
+
+#### Photoshop
 
 * The designer should follow [Photoshop Etiquette](http://photoshopetiquette.com/) when creating the source files.
 * Do not use font antialiasing in the PSD (no crisp/sharp/smooth style) - it is not supported in the browsers.
@@ -56,8 +62,16 @@ The quality of the source files is important for the collaboration between FE de
 
 ### 1.4. Responsive design
 
-* Define breakpoints: [Bootstrap example](http://getbootstrap.com/css/#grid-options)
+* Define breakpoints: [Bootstrap example](https://v4-alpha.getbootstrap.com/layout/grid/#grid-options)
 * The file format should be agreed on between the designer and FE developer.
+
+| | Extra small `<576px` | Small `≥576px` | Medium `≥768px` | Large `≥992px` | Extra large `≥1200px` |
+|-|--------------------|--------------|---------------|--------------|---------------------|
+| Max container width (with padding!) |     None (auto)    |     540px    |     720px     |     960px    |        1140px       |
+
+> When creating grid, beware that the basic `.container` width has **padding included!**.
+
+> For example: gutter = 30px (15px each side) so `.container` width on **Extra large screen** is `1140px - 30px = 1110px`
 
 #### Example
 
@@ -156,12 +170,14 @@ Styleguide describes all elements and components, their behavior, style, usage a
 
 #### 1.9.2. User interactions
 
-Define the behavior of collapsing, read more, animations.
+* Define the behavior of collapsing, read more and transitions or animations.
+* If there are any more complicated interactive transitions or animations, designer should provide a working prototype, where FE developer can see the actual animation.
 
 ##### Example
 
 * [Animations](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Animations)
 * [UI-microinteractions](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/UI-microinteractions)
+* [Possible list of prototyping tools](http://www.creativebloq.com/web-design/top-10-prototyping-tools-2016-21619216)
 
 ##### Outcomes
 
