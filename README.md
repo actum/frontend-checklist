@@ -171,7 +171,7 @@ Styleguide describes all elements and components, their behavior, style, usage a
 #### 1.9.2. User interactions
 
 * Define the behavior of collapsing, read more and transitions or animations.
-* If there are any more compicated interactive transitions or animations, designer should provide a working prototype, where FE developer can see the actual animation.
+* If there are any more complicated interactive transitions or animations, designer should provide a working prototype, where FE developer can see the actual animation.
 
 ##### Example
 
