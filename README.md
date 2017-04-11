@@ -7,13 +7,153 @@
 
 ## 1. Before development
 
-### 1.1. Browser compatibility
+## 1.1. UX Output
+
+### 1.1.1. Graphic sources
+
+The quality of the source files is important for the collaboration between FE developers and designers. 
+* Designer should keep consistency in colors, font sizes, paddings, margins etc. among all the files and components.
+* Designer should avoid using decimal numbers, e.g. `20,45px`
+	
+#### Outcomes
+
+* Consistency of colors, typography, spacing, …
+
+### 1.1.2. Responsive design
+
+* Designer has to provide design in all predefined viewports
+* Designer should use Sketch pages as actual web pages and artboards as different viewports of the pages. It makes it easier to see the differences between mobile/tablet/desktop versions of the page in one screen.
+* For default grid, designer can use [Bootstrap grid for Sketch](https://sketchrepo.com/free-sketch/bootstrap-4-grid-freebie/)
+
+**Default Bootstrap 4 grid**
+
+| | Extra small `<576px` | Small `≥576px` | Medium `≥768px` | Large `≥992px` | Extra large `≥1200px` |
+|-|----------------------|----------------|-----------------|----------------|-----------------------|
+| Max container width (with padding!) | None (auto) | 540px | 720px | 960px | 1140px |
+
+> When creating grid, beware that the basic `.container` width has **padding included!**.
+
+> For example: gutter = 30px (15px each side) so `.container` width on **Extra large screen** is `1140px - 30px = 1110px`
+
+### 1.1.3. Styleguide
+
+We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](https://v4-alpha.getbootstrap.com/)
+Styleguide describes all elements and components, their behavior, style, usage and code snippets.
+
+* Colors
+	* with examples where used, e.g. text-color, link-color, body-bg-color, primary-color, etc.
+	* provide hexadecimal code: `#4285f4` or RGBA: `rgba(34, 34, 34, .3)` for transparency
+	* if possible, use lowercase hexadecimal code `#fff` instead of `#FFF`
+* Buttons - including `:hover`, `:focus`, `:active`, `:disabled` states
+* Typography for all viewports!
+	* headings – h1 to h4 (h5-h6 - if applicable)
+	* paragraphs and links
+	* line height, margins - possibly following a [vertical rhythm](https://www.gridlover.net/)
+* Form elements
+	* `:focus` state
+	* validation with errors
+* Lists (ordered, unordered, definition) – 3 levels
+* Tables - if applicable
+
+#### Outcomes
+
+* All elements are defined and reusable, without need for additional development.
+
+### 1.1.4. Forms
+
+* Avoid styling of the following elements: `checkbox`, `radio`, `select` on mobile (touch) devices. The native implementation is the best for the user experience.
+* Provide validation states (valid/invalid states, error message placement - animation if applicable)
+
+#### Example
+
+* If the custom style is required, then all of the following styling must be defined:
+	* default state
+	* checked (radio, checkbox) state
+	* open state (select)
+
+### 1.1.5. Design
+
+* Links: `hover`/`focus`/`active`/`visited` state
+* Buttons: `hover`/`focus`/`active`/`disabled` states
+* 404 page and other error pages
+* Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net))
+* Ajax loading icon (preferably [CSS animation](https://projects.lukehaas.me/css-loaders/), or SVG when it is supported in IE11+)
+
+#### Outcomes
+
+* Developer does not to need guess/design the missing states and no additional iteration of design process is needed.
+
+### 1.1.6. Design should contain the real content
+
+* Adjust the text line height for languages with diacritic (Czech), especially in the headlines
+* Design for variable text length
+* Design for variable images (height/width/ratio) in case of user uploaded image
+* Design should be provided for the empty state (example: empty search result; no user profile photo/description)
+
+#### Example
+
+* Do not use "Lorem ipsum…", if real content is not available, use some [real text generator](http://meettheipsums.com/)
+* It should be specified and clear in the design which containers should have equal heights, and which should be fluid (flexible)
+
+### Outcomes
+
+* Decreasing the possibility of broken page layout
+
+### 1.1.7. Fonts
+
+* Consider how many fonts and variants (bold, black, light,…) to use *(for better performance 2-3 types are recommended)*
+* Custom fonts will increase the page loading time (critical on mobile devices)
+* Define the fallback font in case the custom font does not load
+* Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), self hosted - if so, provide the source files and make sure that the correct licence is used)
+* Does the font support all the necessary characters?
+
+#### Outcomes
+
+* Fast page load
+
+#### 1.1.8. Icons - TODO: check https://fvsch.com/code/svg-icons/how-to/#section-styling
+
+* Preferred format: `SVG`
+* Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/)
+
+1. Icon shapes are grouped semantically.
+    * if the shapes have the same `fill` attribute and it should change e.g. on hover, it should be in one `<g>` group tag (*represents a folder in graphic editor*)
+    * if the icon shouldn’t change it’s `fill`, `stroke`, etc., all the shapes should be in one `<g>`
+    * all groups, paths, shapes, etc. should have semantic/meaningful name (*e.g. head, eyebrows, left-arm, right-arm, etc.*)
+        * more words should be connected with dash `-` 
+        * should be in English, no special characters
+2. Icon shouldn't have `mask`
+    * if you have an icon inside a circle and the inside shape is bigger, so that it overflows the circle, just use **subtract, intersect or difference** tool in Sketch or Illustrator, to cut the icon to it’s proper size and then use circle shape for the background
+
+##### Outcomes
+
+* Icons are crisp sharp on all screen sizes (devices/high screen density)
+
+#### 1.1.9. User interactions
+
+* Define the behavior of collapsing, read more and transitions or animations.
+* If there are any more complicated interactive transitions or animations, designer should provide a working prototype, where FE developer can see the actual animation.
+
+##### Example
+
+* [Animations](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Animations)
+* [UI-microinteractions](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/UI-microinteractions)
+* [Possible list of prototyping tools](http://www.creativebloq.com/web-design/top-10-prototyping-tools-2016-21619216)
+
+##### Outcomes
+
+* Better user experience
+* Consistency
+
+## 1.2. Frontend Output
+
+### 1.2.1. Browser compatibility
 
 Matrix of supported browsers should be defined and agreed on with the client.
 
 #### Outcomes
 
-* QA engineers know which browsers to test in
+* QA engiers know which browsers to test in
 * Developers know which features they can use
 
 #### Example
@@ -30,7 +170,7 @@ Matrix of supported browsers should be defined and agreed on with the client.
 |               |                  | Firefox       | 47 and above |
 |               | Mac              | Safari        | 9  and above |
 
-### 1.2. Dev Stack
+### 1.2.2. Dev Stack
 
 Use the latest versions of the [gulp dev stack](https://github.com/actum/gulp-dev-stack).
 In case you need more features, add them within the project.
@@ -40,157 +180,6 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 
 * Best practices are ensured (structure, linting, …)
 * No need to reinvent the wheel
-
-### 1.3. Graphic sources
-
-The quality of the source files is important for the collaboration between FE developers and designers. 
-* Designer should keep consistency in colors, font sizes, paddings, margins etc. among all the files and components.
-* Designer should follow a [vertical rhythm](https://www.gridlover.net/)
-* Designer should not use decimal numbers, e.g. `20,45px`
-
-#### Sketch
-* The designer should use Sketch pages as actual web pages and artboards as different viewports of the pages. It makes it easier to see the differences beetween mobile/tablet/desktop versions of the page in one screen.
-
-#### Photoshop
-
-* The designer should follow [Photoshop Etiquette](http://photoshopetiquette.com/) when creating the source files.
-* Do not use font antialiasing in the PSD (no crisp/sharp/smooth style) - it is not supported in the browsers.
-
-#### Outcomes
-
-* Consistency of colors, typography, spacing, …
-
-### 1.4. Responsive design
-
-* Define breakpoints: [Bootstrap example](https://v4-alpha.getbootstrap.com/layout/grid/#grid-options)
-* The file format should be agreed on between the designer and FE developer.
-
-| | Extra small `<576px` | Small `≥576px` | Medium `≥768px` | Large `≥992px` | Extra large `≥1200px` |
-|-|--------------------|--------------|---------------|--------------|---------------------|
-| Max container width (with padding!) |     None (auto)    |     540px    |     720px     |     960px    |        1140px       |
-
-> When creating grid, beware that the basic `.container` width has **padding included!**.
-
-> For example: gutter = 30px (15px each side) so `.container` width on **Extra large screen** is `1140px - 30px = 1110px`
-
-#### Example
-
-* PSD - ensure that the file is compatible with Photoshop or [Avocode](https://avocode.com/)
-* One file for each breakpoint (device)
-
-### 1.5. Forms
-
-* Avoid styling of the following elements: `checkbox`, `radio`, `select` on mobile (touch) devices. The native implementation is the best for the user experience.
-* Provide validation states (valid/invalid states, error message placement)
-
-#### Example
-
-* If the custom style is required, then all of the following styling must be defined:
-	* default state
-	* checked (radio, checkbox) state
-	* open state (select)
-
-### 1.6. Design
-
-* Links: `hover`/`focus`/`active`/`visited` state
-* Buttons: `hover`/`focus`/`active`/`disabled` states
-* 404 page and other error pages
-* Prepare favicon, touch icons, OG image etc. (see [http://realfavicongenerator.net](http://realfavicongenerator.net))
-* Ajax loading icon (preferably [CSS animation](https://projects.lukehaas.me/css-loaders/), or SVG when it is supported in IE11+)
-
-#### Outcomes
-
-* Developer does not to need guess/design the missing states and no additional iteration of design process is neeeded.
-
-### 1.7. Design should contain the real content
-
-* Adjust the text line height for languages with diacritic (Czech), especially in the headlines
-* Design for variable text length
-* Design for variable images (height/width/ratio) in case of user uploaded image
-* Design should be provided for the empty state (example: empty search result; no user profile photo/description)
-
-#### Example
-
-* Do not use "Lorem ipsum…"
-* It should be specified and clear in the design which containers should have equal heights, and which should be fluid (flexible)
-
-### Outcomes
-
-* Decreasing the possibility of broken page layout
-
-### 1.8. Fonts
-
-* Consider how many fonts and variants (bold, black, light,…) to use
-* Custom fonts will increase the page loading time (critical on mobile devices)
-* Define the fallback font in case the custom font does not load
-* Where the fonts will be hosted? ([Google fonts](https://fonts.google.com/), [Typekit](https://typekit.com/), [Fonts.com](https://www.fonts.com/), selfhosted - if so, provide the source files and make sure that the correct licence is used)
-* Does the font support all the necessary characters?
-
-#### Outcomes
-
-* Fast page load
-
-### 1.9. Styleguide
-
-We prefer [Atomic design](http://atomicdesign.bradfrost.com/), based on [Bootstrap framework](http://getbootstrap.com/).
-Styleguide describes all elements and components, their behavior, style, usage and code snippets.
-
-* headings – h1 to h6
-* paragraphs and links
-* lists (ordered, unordered, definition) – 3 levels
-* tables
-* images
-* form elements
-* error messages (form error messages)
-* pagination
-* buttons (1 or 2 or 3 versions - but nowhere use 4th version)
-* components (lightbox, …)
-
-#### Outcomes
-
-* All elements are defined and reusable, without need for additional development.
-
-#### 1.9.1. Icons
-
-* Prefered format: `SVG`
-* Icon system - [https://css-tricks.com/icons-and-teams/](https://css-tricks.com/icons-and-teams/)
-
-1. Icon shapes are grouped semantically.
-    * if the shapes have the same `fill` attribute and it should change e.g. on hover, it should be in one `<g>` group tag (*represents a folder in graphic editor*)
-    * if the icon shouldn’t change it’s `fill`, `stroke`, etc., all the shapes should be in one `<g>`
-    * all groups, paths, shapes, etc. should have semantic/meaningful name (*e.g. head, eyebrows, left-arm, right-arm, etc.*)
-        * more words should be connected with dash `-` 
-        * should be in english, no special characters
-2. Icon shouldn't have `mask`
-    * if you have an icon inside a circle and the inside shape is bigger, so that it overflows the circle, just use **substract, intersect or difference** tool in Sketch or Illustrator, to cut the icon to it’s proper size and then use circle shape for the background
-
-##### Outcomes
-
-* Icons are crisp sharp on all screen sizes (devices/high screen density)
-
-#### 1.9.2. User interactions
-
-* Define the behavior of collapsing, read more and transitions or animations.
-* If there are any more complicated interactive transitions or animations, designer should provide a working prototype, where FE developer can see the actual animation.
-
-##### Example
-
-* [Animations](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/Animations)
-* [UI-microinteractions](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/UI-microinteractions)
-* [Possible list of prototyping tools](http://www.creativebloq.com/web-design/top-10-prototyping-tools-2016-21619216)
-
-##### Outcomes
-
-* Better user experience
-* Consistency
-
-#### 1.9.3. Colors
-
-* provide hexadecimal code: `#4285f4` or RGBA: `rgba(34,34,34,.3)` for transparency
-
-##### Outcomes
-
-* Consistency
 
 ---
 
