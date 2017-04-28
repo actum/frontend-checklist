@@ -14,7 +14,9 @@
 The quality of the source files is important for the collaboration between FE developers and designers. 
 * Designer should keep consistency in colors, font sizes, paddings, margins etc. among all the files and components.
 * Designer should avoid using decimal numbers, e.g. `20,45px`
-	
+* Utilize [baseline grid](https://zellwk.com/blog/why-vertical-rhythms/) to create repeatitive and consisten spaces.
+* Keep [vertical rythm](https://www.smashingmagazine.com/2015/04/design-principles-compositional-flow-and-rhythm/) consistent. 
+
 #### Outcomes
 
 * Consistency of colors, typography, spacing, …
@@ -24,6 +26,7 @@ The quality of the source files is important for the collaboration between FE de
 * Designer has to provide design in all predefined viewports
 * Designer should use Sketch pages as actual web pages and artboards as different viewports of the pages. It makes it easier to see the differences between mobile/tablet/desktop versions of the page in one screen.
 * For default grid, designer can use [Bootstrap grid for Sketch](https://sketchrepo.com/free-sketch/bootstrap-4-grid-freebie/)
+* Design adapts to the features and capabilities of devices
 
 **Default Bootstrap 4 grid**
 
@@ -31,9 +34,10 @@ The quality of the source files is important for the collaboration between FE de
 |-|----------------------|----------------|-----------------|----------------|-----------------------|
 | Max container width (with padding!) | None (auto) | 540px | 720px | 960px | 1140px |
 
-> When creating grid, beware that the basic `.container` width has **padding included!**.
+> When creating grid, beware that the basic `.container` width has **padding included**.
 
 > For example: gutter = 30px (15px each side) so `.container` width on **Extra large screen** is `1140px - 30px = 1110px`
+[![How grid works](http://www.helloerik.com/wp-content/uploads/image-3.png)](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works)
 
 ### 1.1.3. Styleguide
 
@@ -62,7 +66,12 @@ Styleguide describes all elements and components, their behavior, style, usage a
 ### 1.1.4. Forms
 
 * Avoid styling of the following elements: `checkbox`, `radio`, `select` on mobile (touch) devices. The native implementation is the best for the user experience.
-* Provide validation states (valid/invalid states, error message placement - animation if applicable)
+* Provide validation states
+	* valid input 
+	* invalid input (recurring/common phrases (e.g., 'Email is not valid.') if applicable)
+	* loading state (animation if applicable)
+	* error message placement
+* All forms fields have associated label
 
 #### Example
 
@@ -70,6 +79,7 @@ Styleguide describes all elements and components, their behavior, style, usage a
 	* default state
 	* checked (radio, checkbox) state
 	* open state (select)
+	* focus state
 
 ### 1.1.5. Design
 
@@ -81,7 +91,7 @@ Styleguide describes all elements and components, their behavior, style, usage a
 
 #### Outcomes
 
-* Developer does not to need guess/design the missing states and no additional iteration of design process is needed.
+* Developer does not need to guess/design the missing states and no additional iteration of design process is needed.
 
 ### 1.1.6. Design should contain the real content
 
@@ -124,6 +134,7 @@ Styleguide describes all elements and components, their behavior, style, usage a
         * should be in English, no special characters
 2. Icon shouldn't have `mask`
     * if you have an icon inside a circle and the inside shape is bigger, so that it overflows the circle, just use **subtract, intersect or difference** tool in Sketch or Illustrator, to cut the icon to it’s proper size and then use circle shape for the background
+3. Avoid extra whitespace with consistent `viewBox` size.
 
 ##### Outcomes
 
@@ -191,6 +202,7 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 * Use our CSS naming conventions ([http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/CSS-Guidelines](http://intranet/Wiki-Actum/Development/Front-end/Best-Practice/CSS-Guidelines)
 * Maintain living styleguide using the dev stack
 * Make sure favicon, touch icons, OG images are implemented
+* Design changes should be communicated and costs agreed / timings considered
 
 ### 2.2. Accessibility
 
@@ -198,6 +210,10 @@ You can also [raise an issue on Github](https://github.com/actum/gulp-dev-stack/
 * Keep the code semantic (use headings, paragraphs, etc. where appropriate)
 * Use alt text for images (at least leave the alt attribute empty, [read more](http://a11yproject.com/posts/alt-text/))
 * Focus state for links (accessible using keyboard)
+
+### 2.3 Law
+
+* Provide details of cookies usage
 
 ---
 
