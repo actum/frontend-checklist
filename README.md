@@ -87,7 +87,7 @@ Styleguide describes all elements and components, their behavior, style, usage a
 ### 1.1.6. Design should contain the real content
 
 * Adjust the text line height for languages with diacritic (Czech), especially in the headlines
-* Design for variable text length
+* Design for **variable text length**, prepare a version with longer text, if it's gonna wrap on a new line or it should be truncate text with `...` in the end.
 * Design for variable images (height/width/ratio) in case of user uploaded image
 * Design should be provided for the empty state (example: empty search result; no user profile photo/description)
 
