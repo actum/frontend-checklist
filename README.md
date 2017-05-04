@@ -8,6 +8,7 @@
 ## 1. Before development
 
 ## 1.1. UX Output
+**Frontend developer should see the design before it goes to the client for approval. In this way we can prevent asking the client for repetitive approvals, if we have to change the design because of some technical issues, design issues etc.**
 
 ### 1.1.1. Graphic sources
 
