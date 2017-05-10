@@ -12,19 +12,21 @@
 
 ### 1.1.1. Graphic sources
 
-The quality of the source files is important for the collaboration between FE developers and designers. 
+The quality of the source files is important for the collaboration between FE developers and designers.
 * Designer should keep consistency in colors, font sizes, paddings, margins etc. among all the files and components.
 * Designer should avoid using decimal numbers, e.g. `20,45px`
-	
+
 #### Outcomes
 
-* Consistency of colors, typography, spacing, …
+* Consistency in design makes consistency in the code. The latter results in smaller source size, proper reusability and stable QA testing.
 
 ### 1.1.2. Responsive design
 
-* Designer has to provide design in all predefined viewports
+* Start and follow **mobile-first design**.
+* Ensure component's consistency. When simple list of items becomes tabbed carousel on mobile it is most likely a wrong solution. However, this problem is self-eliminated when following mobile-first approach.
+* Designer has to provide design in all predefined viewports.
 * Designer should use Sketch pages as actual web pages and artboards as different viewports of the pages. It makes it easier to see the differences between mobile/tablet/desktop versions of the page in one screen.
-* For default grid, designer can use [Bootstrap grid for Sketch](https://sketchrepo.com/free-sketch/bootstrap-4-grid-freebie/)
+* For default grid, designer can use [Bootstrap grid for Sketch](https://sketchrepo.com/free-sketch/bootstrap-4-grid-freebie/). In case design requires a custom grid, it should be acknowledged and aligned with the developer before development process begins to prevent unnecessary implementations.
 
 **Default Bootstrap 4 grid**
 
@@ -121,7 +123,7 @@ Styleguide describes all elements and components, their behavior, style, usage a
     * if the shapes have the same `fill` attribute and it should change e.g. on hover, it should be in one `<g>` group tag (*represents a folder in graphic editor*)
     * if the icon shouldn’t change it’s `fill`, `stroke`, etc., all the shapes should be in one `<g>`
     * all groups, paths, shapes, etc. should have semantic/meaningful name (*e.g. head, eyebrows, left-arm, right-arm, etc.*)
-        * more words should be connected with dash `-` 
+        * more words should be connected with dash `-`
         * should be in English, no special characters
 2. Icon shouldn't have `mask`
     * if you have an icon inside a circle and the inside shape is bigger, so that it overflows the circle, just use **subtract, intersect or difference** tool in Sketch or Illustrator, to cut the icon to it’s proper size and then use circle shape for the background
