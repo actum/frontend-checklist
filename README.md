@@ -128,10 +128,10 @@ Styleguide describes all elements and components, their behavior, style, usage a
 2. Icon shouldn't have `mask`
     * if you have an icon inside a circle and the inside shape is bigger, so that it overflows the circle, just use **subtract, intersect or difference** tool in Sketch or Illustrator, to cut the icon to it’s proper size and then use circle shape for the background
 3. Icon and its shapes should have *no explicit* `fill`/`stroke`.
-    * That means that there is no explicit color assigned to the icon's elements in the graphic editor
+    * That means that there is no explicit color assigned to the icon's shapes in the graphic editor
     * Icon with no colors assigned looks black in the Finder
-    * This is needed to dynamically change the color via CSS. When there is a custom color attach to the icon's elements, it does not get overriden when applying CSS modifications.
-    * Please see the example of a proper `cart` icon below:
+    * This is needed to dynamically change the color via CSS. When there is a custom color attached to the icon's shapes, it does not get overriden when applying CSS modifications.
+    * Please see the example of a **proper** `cart` icon below:
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
   <path d="M4,21a3,3,0,1,0,3-3A3,3,0,0,0,4,21Zm4,0a1,1,0,1,1-1-1A1,1,0,0,1,8,21Z"/>
