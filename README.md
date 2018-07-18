@@ -47,7 +47,9 @@ Styleguide describes all elements and components, their behavior, style, usage a
 	* with examples where used, e.g. text-color, link-color, body-bg-color, primary-color, etc.
 	* provide hexadecimal code: `#4285f4` or RGBA: `rgba(34, 34, 34, .3)` for transparency
 	* if possible, use lowercase hexadecimal code `#fff` instead of `#FFF`
-* Buttons - including `:hover`, `:focus`, `:active`, `:disabled` states
+* Buttons
+	* include all button states: `:hover`, `:focus`, `:active`, `:disabled`
+	* if you're using outline buttons with border, use border position **outside**, **don't** use inside or center in your graphic editor
 * Typography for all viewports!
 	* headings – h1 to h4 (h5-h6 - if applicable)
 	* paragraphs and links
@@ -57,6 +59,8 @@ Styleguide describes all elements and components, their behavior, style, usage a
 	* validation with errors
 * Lists (ordered, unordered, definition) – 3 levels
 * Tables - if applicable
+
+**IMPORTANT** - Setup `line-height` on all elements (form, button, headings, etc.), because then the real spacing/margins of elements can be different from that in your graphic editor
 
 #### Outcomes
 
